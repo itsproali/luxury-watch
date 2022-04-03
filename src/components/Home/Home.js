@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import useUsers from '../../customHook/useUsers';
+import DisplayUsers from '../DisplayUsers/DisplayUsers';
 
 const Home = () => {
-    const [users, setUsers] = useState([])
-    useEffect(() => {
-        fetch('review.json')
-            .then(res => res.json())
-            .then(data => setUsers(data))
-    }, [])
+
+    const [users] = useUsers([])
     const total = users.slice(0, 3);
     return (
         <div className='mx-4 md:mx-16'>
@@ -26,19 +25,19 @@ const Home = () => {
                 <h2 className='text-4xl font-bold text-center my-5'>Customer Reviews ({users.length})</h2>
 
                 <div className="review-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {
-                    total.map(user =>
-                        <div key={user.id} className="review p-3 rounded  shadow-lg hover:shadow-xl">
-                            <img className='w-[70px] h-[70px] block mx-auto rounded-full' src={user.img} alt={user.name} />
-                            <h3 className='font-bold text-2xl text-center my-1'>{user.name}</h3>
-                            <p>{ user.description}</p>
-                            <p className='font-bold'>Rating : { user.rating}</p>
-                        </div>
-                    )
-                }
+                    {
+                        total.map(user =>
+                            <DisplayUsers
+                                key={user.id}
+                                user={user}
+                            ></DisplayUsers>
+                        )
+                    }
                 </div>
-                
-                <button className="block mx-auto my-5 font-medium px-8 py-2 bg-pink-200 text-pink-500 cursor-pointer rounded hover:bg-pink-300 hover:text-pink-700 ease-in-out duration-300">See All Reviews</button>
+
+                <Link to='/reviews'>
+                    <button className="block mx-auto my-5 font-medium px-8 py-2 bg-pink-200 text-pink-500 cursor-pointer rounded hover:bg-pink-300 hover:text-pink-700 ease-in-out duration-300">See All Reviews</button>
+                </Link>
             </div>
         </div>
     );
