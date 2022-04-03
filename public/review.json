@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Nick McWane",
+        "img": "customer-1.jpg",
+        "description": "Perfect, beautiful and eye catching without being too flashy.",
+        "rating": 5.0
+    },
+    {
+        "id": 2,
+        "name": "Steven He",
+        "img": "customer-2.jpg",
+        "description": "Honestly, this watch is so nice. It's my style. It looks nice but it's not too eye catching. It just adds to your style. It's very slim and not bulky, something I really like.",
+        "rating": 5.0
+    },
+    {
+        "id": 3,
+        "name": "Thomas",
+        "img": "customer-3.jpg",
+        "description": " This watch is gorgeous. Very attractive. It seems to keep very good time after a couple days. I love this watch.",
+        "rating": 5.0
+    },
+    {
+        "id": 4,
+        "name": "Jessica",
+        "img": "customer-4.jpg",
+        "description": "Used as a wedding day present for my husband! The colors were perfect to match our wedding and he absolutely loved it. It came in quick enough.",
+        "rating": 5.0
+    },
+    {
+        "id": 5,
+        "name": "Michael",
+        "img": "customer-5.jpg",
+        "description": "Used as a wedding day present for my husband! The colors were perfect to match our wedding and he absolutely loved it. It came in quick enough.",
+        "rating": 5.0
+    },
+    {
+        "id": 6,
+        "name": "James",
+        "img": "customer-6.jpg",
+        "description": "What a gorgeous men's watch! Light weight, beautifully perfect!!! Great price too!! Love it...and the man I gave it to loves it too!!!",
+        "rating": 5.0
+    }
+]
