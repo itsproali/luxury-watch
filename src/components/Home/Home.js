@@ -22,7 +22,7 @@ const Home = () => {
             </div>
 
             <div className="customer-reviews my-10">
-                <h2 className='text-4xl font-bold text-center my-5'>Customer Reviews ({users.length})</h2>
+                <h2 className='text-4xl font-bold text-center my-5 text-pink-500'>Customer Reviews ({users.length})</h2>
 
                 <div className="review-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                     {

@@ -6,7 +6,7 @@ const Reviews = () => {
     const [users] = useUsers([])
     return (
                 <div className="customer-reviews my-10 mx-4 md:mx-16">
-                <h2 className='text-4xl font-bold text-center my-5'>Customer Reviews ({users.length})</h2>
+                <h2 className='text-4xl font-bold text-center my-5 text-pink-600'>Customer Reviews ({users.length})</h2>
 
                 <div className="review-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {
