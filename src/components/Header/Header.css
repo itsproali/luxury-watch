@@ -1,0 +1,15 @@
+.navlink {
+    padding: 2px 0;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+.active {
+    border-top: 2px solid #DB2777;
+    border-bottom: 2px solid #DB2777;
+}
+.navlink:hover {
+    color: #DB2777;
+    border-top: 2px solid #DB2777;
+    border-bottom: 2px solid #DB2777;
+}
