@@ -10,7 +10,11 @@ const Home = () => {
     <div className="mx-4 md:mx-16">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center">
         <div className="main-image w-full text-center">
-          <img className="w-full md:w-2/3" src="main-image.png" alt="Luxury Watch" />
+          <img
+            className="w-2/3 mx-auto"
+            src="main-image.png"
+            alt="Luxury Watch"
+          />
         </div>
 
         <div className="home-text">
