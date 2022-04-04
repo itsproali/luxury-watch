@@ -2,11 +2,13 @@
     padding: 2px 0;
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
+    font-weight: 500;
     transition: .4s;
 }
 .active {
     border-top: 2px solid #DB2777;
     border-bottom: 2px solid #DB2777;
+    font-weight: 700;
 }
 .navlink:hover {
     color: #DB2777;

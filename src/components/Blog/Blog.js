@@ -2,7 +2,7 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="mx-16 py-4">
+    <div className="mx-4 md:mx-16 py-4">
       <h1 className="font-bold text-pink-600 text-4xl text-center my-3">
         Popular Blogs
       </h1>

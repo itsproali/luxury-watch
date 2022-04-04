@@ -10,7 +10,7 @@ const Home = () => {
     <div className="mx-4 md:mx-16">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center">
         <div className="main-image w-full text-center">
-          <img className="w-full" src="main-image.png" alt="Luxury Watch" />
+          <img className="w-full md:w-2/3" src="main-image.png" alt="Luxury Watch" />
         </div>
 
         <div className="home-text">
@@ -23,9 +23,11 @@ const Home = () => {
             respiration, menstrual cycle, stress, sleep, estimated heart rate
             and more
           </p>
-          <button className="font-medium px-4 py-2 bg-pink-200 text-pink-500 cursor-pointer rounded hover:bg-pink-300 hover:text-pink-700 ease-in-out duration-300">
-            Explore Now
-          </button>
+          <Link to="/dashboard">
+            <button className="font-medium px-4 py-2 bg-pink-200 text-pink-500 cursor-pointer rounded hover:bg-pink-300 hover:text-pink-700 ease-in-out duration-300">
+              Explore Now
+            </button>
+          </Link>
         </div>
       </div>
 
